@@ -1,11 +1,11 @@
 body {
     margin: 0;
     font-family: 'Mulish', sans-serif;
-    background-color: #8F57FD;
+    background-color: #21C08B;
 }
 
 header {
-    background-color: #8F57FD;
+    background-color: #21C08B;
     width: 100%;
     height: 80px;
     display: flex;
@@ -16,6 +16,59 @@ header {
 .header__img {
     width: 200px;
     margin: 10px;
+}
+
+.login {
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px white solid;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label{
+    font-size: 14px;
+}
+
+.login__container--remember {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login__container--remember a:hover {
+    text-decoration: underline;
+}
+
+.login__container--social-media div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .header__menu {
@@ -83,7 +136,7 @@ header {
     font-size: 16px;
     height: 40px;
     padding: 0px 20px;
-    width: 50%;
+    /* width: 50%; */
     outline: 0;
 }
 
