@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Mulish', sans-serif;
-    background-color: #21C08B;
+    background-color: #AB88FF;
 }
 
 header {
@@ -36,6 +36,9 @@ header {
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .login__container--form {
@@ -64,11 +67,58 @@ header {
     text-decoration: underline;
 }
 
-.login__container--social-media div{
+.login__container--social-media > div {
     display: flex;
     align-items: center;
     font-size: 14px;
     margin-bottom: 10px;
+}
+
+.login__container--social-media > div > img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register {
+    font-size: 14px;
+}
+
+.login__container--register a{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: solid 2px white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    outline: none;
+    height: 50px;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
 }
 
 .header__menu {
@@ -127,7 +177,7 @@ header {
     font-size: 25px;
 }
 
-.input {
+.main input {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
     border-radius: 50px;
@@ -203,3 +253,22 @@ header {
     bottom: 0;
 }
 
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #AB88FF;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
